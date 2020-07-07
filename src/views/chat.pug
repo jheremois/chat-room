@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Andika")
+        link(rel="stylesheet", href="stylesheets/chat.css")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title#name= `${user_name}`
+    body
+        header
+            h2#user= user_name
+            h2#users_online= number
+        
+        .chat
+            #hed= user_name
+            #chat_window
+            .send
+                .sender
+                    input#chat_input(name='message' type="text" placeholder='Message' minlength='1' maxlength='200' required)
+                    button#send
+                        img(src="images/messaje.png")     
+    script(src="/socket.io/socket.io.js")
+    script(src="javascripts/sockets.js")
+    script(src="javascripts/chat.js")

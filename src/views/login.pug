@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Andika")
+        link(rel="stylesheet", href="stylesheets/login.css")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title chat_room
+    body
+        .login
+            form(action="/chat_room", method="post")
+                label(for="name") Welcome
+                input#name(name='user_name' type="text" placeholder='User name' minlength='4' maxlength='12' required)
+                button Log in
+    script(src="/socket.io/socket.io.js")

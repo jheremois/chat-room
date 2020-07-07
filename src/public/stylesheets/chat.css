@@ -1,0 +1,91 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Andika';
+    color: whitesmoke;
+    font-weight: 400;
+}
+body{background-color: #212b38f6;}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(81,78,255,1);
+    padding: 1% 2%;
+}
+header h2{font-size: 130%;}
+.chat{
+    background-color: #37465b;
+    display: grid;
+    margin: 2%;
+    padding: 0% 2%;
+}
+#chat_window{
+    background-color: #212b38f6;
+    height: 625px;
+    overflow: auto;
+    border: rgba(245, 245, 245, 0.726) 1px solid;
+    overflow-x: hidden;
+}
+.sender{
+    width: 100%;
+    background-color: #212b38f6;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+.send,#hed{
+    font-size: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 1.5%;
+}
+#messaje{
+    min-width: 100px;
+    max-width: 850px;
+    margin: 0.7% 1.8%;
+    display: inline-block;
+    transform: scale(0.9);
+    transition-property: all;
+    transition-duration: 300ms;
+}
+.u_name{
+    background-color: rgba(81,78,255,1);
+    border-radius: 15px 15px 0 0;
+    font-size: 90%;
+    padding: 2px 8px;
+}
+.u_messaje{
+    background-color: #37465b;
+    border-radius: 0 0 15px 15px;
+    font-size: 120%;
+    padding: 8px;
+}
+input,button{
+    font-size: 110%;
+    padding: 1%;
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+input{
+    width: 82%;
+}
+input::placeholder{color: rgba(245, 245, 245, 0.726);}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    border-left: 1px solid whitesmoke;
+}
+img{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    height: 25px;
+}
+@media screen and (max-width: 768px){.u_messaje{max-width: 305px;}
+input,button{padding: 2%;}
+#messaje{margin: 2%;}
+#chat_window{height: 575px;}
+.send{padding: 3% 1%;}}
