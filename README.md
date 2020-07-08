@@ -3,7 +3,7 @@ Chat room
 
 #### A chat room where you can chat with everyone who's online.
 
-#### Made using:
+## Technologies:
 - node.js, express and socket.io.
 - pug template engine and css
 
