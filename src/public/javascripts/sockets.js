@@ -47,8 +47,9 @@ socket.on('send_messaje',(ms)=>{
     chat_window.innerHTML += `
     <div> 
         <div id='messaje'>
-            <p class='u_name'>${ms.user}</p>
-            <p class='u_messaje'>${ms.chat_input}</p>
+            <p class='u_messaje'>
+                <strong class='u_name'>${ms.user}:</strong> ${ms.chat_input}
+            </p>
         </div>
     </div>
     `
@@ -57,7 +58,9 @@ socket.on('send_messaje',(ms)=>{
 // User typing
 
 chat_input.addEventListener('keypress', ()=>{
-    socket.emit('u_typing', l_online)
+    if(chat_input.value.length > 3){
+        socket.emit('u_typing', l_online)
+    }
 })
 
 socket.on('typing',(use)=>{

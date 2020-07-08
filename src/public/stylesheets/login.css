@@ -1,14 +1,13 @@
 *{margin: 0%; padding: 0%; font-family: 'Andika';}
 body{
-    background-color: #212b38f6;
+    background-color: #162447;
     display: flex;
     justify-content: center;
 }
 .login{
     margin-top: 10%;
-    background-color: #726fff;
-    background: rgb(81,78,255);
-    background: linear-gradient(166deg, rgba(81,78,255,1) 0%, rgba(114,111,255,1) 41%,rgba(133,130,252,1) 77%, rgba(103,99,252,1) 100%);
+    background: rgb(228,63,80);
+    background: linear-gradient(163deg, rgba(228,63,80,1) 0%, rgba(162,8,24,1) 120%);
     display: flex;
     justify-content: center;
     width: 600px;

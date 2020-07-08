@@ -1,47 +1,34 @@
-*{
-    margin: 0%;
+*{margin: 0%;
     padding: 0%;
     font-family: 'Andika';
-    color: whitesmoke;
-    font-weight: 400;
+    color: #ffffff;
+    font-weight: 100;
 }
-body{background-color: #212b38f6;}
-header{
-    display: flex;
+body{background-color: #212b38f6}
+header{display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(81,78,255,1);
+    background-color: #E43F5A;
     padding: 1% 2%;
 }
 header h2{font-size: 130%;}
-.chat{
-    background-color: #37465b;
+.chat{background-color: #37465b;
     display: grid;
-    margin: 2%;
+    margin: 1% 2%;
     padding: 0% 2%;
 }
-#chat_window{
-    background-color: #212b38f6;
+#chat_window{background-color: #1F4068;
     height: 625px;
     overflow: auto;
     border: rgba(245, 245, 245, 0.726) 1px solid;
     overflow-x: hidden;
 }
-.sender{
-    width: 100%;
-    background-color: #212b38f6;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-}
-.send,#hed{
-    font-size: 90%;
+.send,#hed{font-size: 110%;
     display: flex;
     justify-content: center;
     padding: 1.5%;
 }
-#messaje{
-    min-width: 100px;
+#messaje{min-width: 100px;
     max-width: 850px;
     margin: 0.7% 1.8%;
     display: inline-block;
@@ -49,43 +36,45 @@ header h2{font-size: 130%;}
     transition-property: all;
     transition-duration: 300ms;
 }
-.u_name{
-    background-color: rgba(81,78,255,1);
-    border-radius: 15px 15px 0 0;
-    font-size: 90%;
-    padding: 2px 8px;
+.u_name{font-size: 110%;
+    color: #d8324e;
 }
-.u_messaje{
-    background-color: #37465b;
-    border-radius: 0 0 15px 15px;
-    font-size: 120%;
+.u_messaje{font-weight: 300;
+    background-color: #112d3f;
+    border-radius: 15px;
+    font-size: 100%;
     padding: 8px;
 }
-input,button{
-    font-size: 110%;
-    padding: 1%;
+.sender{height: 45px;
+    width: 100%;
+    background-color: #1F4068;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+input,button{font-size: 110%;
     outline: none;
     background-color: transparent;
     border: none;
+    height: 100%;
 }
-input{
-    width: 82%;
+input{padding: 2%;
+    width: 93%;
 }
 input::placeholder{color: rgba(245, 245, 245, 0.726);}
-button{
-    display: flex;
+button{display: flex;
     justify-content: center;
     align-items: center;
-    width: 18%;
-    border-left: 1px solid whitesmoke;
+    width: 7%;
 }
-img{
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-    height: 25px;
+img{border-radius: 20px 0 0 20px;
+    width: 100%;
+    height: 100%;
+    transform: rotatey(180deg);
 }
 @media screen and (max-width: 768px){.u_messaje{max-width: 305px;}
-input,button{padding: 2%;}
 #messaje{margin: 2%;}
 #chat_window{height: 575px;}
+input{width: 85%;}
+button{width: 15%;}
 .send{padding: 3% 1%;}}
