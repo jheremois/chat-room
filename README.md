@@ -3,14 +3,15 @@ Chat room
 
 #### A chat room where you can chat with everyone who's online.
 
-#### Made using node.js, express and socket.io.
-#### It has a responsive design made using vanilla css.
-#### The views was made using pug template engine.
+#### Made using:
+- node.js, express and socket.io.
+- pug template engine.
+- vanilla css
 
 
-![chat_room_example1](https://user-images.githubusercontent.com/61896147/86693359-9ad96100-bfd8-11ea-8a2f-2862e2f8edc9.jpg)
+![image](https://user-images.githubusercontent.com/61896147/86863379-0b47b700-c099-11ea-9ebe-e6301ae2f457.png)
 
-![chat_room_example2](https://user-images.githubusercontent.com/61896147/86693200-75e4ee00-bfd8-11ea-8705-2d431a09300f.jpg)
+![image](https://user-images.githubusercontent.com/61896147/86863078-793fae80-c098-11ea-93b1-fa76a9f5f689.png)
 
 ## Setup:
 
