@@ -5,8 +5,7 @@ Chat room
 
 #### Made using:
 - node.js, express and socket.io.
-- pug template engine.
-- vanilla css
+- pug template engine and css
 
 
 ![image](https://user-images.githubusercontent.com/61896147/86863379-0b47b700-c099-11ea-9ebe-e6301ae2f457.png)
