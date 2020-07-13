@@ -58,7 +58,7 @@ sockets.on('connection', (socket)=>{
 
     // Last user that entered
     socket.on('last_online',(last)=>{
-        sockets.sockets.emit('last', last)
+        socket.broadcast.emit('last', last)
     })
 
     // User typing

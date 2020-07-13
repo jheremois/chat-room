@@ -73,4 +73,7 @@ socket.on('typing',(use)=>{
 
 socket.on('last',(ls)=>{
     document.getElementById('user').innerHTML = `${ls.l_online} entered!`
+    setTimeout(() => {
+        document.getElementById('user').innerHTML = l_online
+    }, 3000);
 })
