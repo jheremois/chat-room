@@ -5,12 +5,12 @@ Chat room
 
 ## Technologies:
 - node.js, express and socket.io.
-- pug template engine and css
+- pug template engine and css (responsive design)
 
 
-![image](https://user-images.githubusercontent.com/61896147/86863379-0b47b700-c099-11ea-9ebe-e6301ae2f457.png)
+![image](https://user-images.githubusercontent.com/61896147/87380681-008d9600-c561-11ea-9bfe-73f41dd7dab4.png)
 
-![image](https://user-images.githubusercontent.com/61896147/86863078-793fae80-c098-11ea-93b1-fa76a9f5f689.png)
+![image](https://user-images.githubusercontent.com/61896147/87383171-abed1980-c566-11ea-8ffd-2fce91bd47a4.png)
 
 ## Setup:
 
