@@ -11,11 +11,23 @@ header{display: flex;
     background-color: #E43F5A;
     padding: 1% 2%;
 }
-header h2{font-size: 130%;}
+header h2{
+display: flex;
+font-size: 130%;
+}
 .chat{background-color: #37465b;
     display: grid;
     margin: 1% 2%;
     padding: 0% 2%;
+}
+#user{
+    width: 70%;
+}
+.usx{
+    margin-right: 3px;
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
 }
 #chat_window{background-color: #1F4068;
     height: 625px;
@@ -32,7 +44,7 @@ header h2{font-size: 130%;}
     max-width: 850px;
     margin: 0.7% 1.8%;
     display: inline-block;
-    transform: scale(0.9);
+    transform: scale(0.98);
     transition-property: all;
     transition-duration: 300ms;
 }
@@ -66,6 +78,7 @@ button{display: flex;
     justify-content: center;
     align-items: center;
     width: 7%;
+    cursor: pointer;
 }
 img{border-radius: 20px 0 0 20px;
     width: 100%;

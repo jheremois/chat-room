@@ -1,6 +1,6 @@
 {
   "name": "chat",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Chat made using node.js, express and socket.io",
   "main": "index.js",
   "scripts": {

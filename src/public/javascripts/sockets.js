@@ -28,8 +28,7 @@ socket.emit('last_online',{
 
 // Send messaje
 
-send_button.addEventListener('click',()=>{
-
+const send = ()=>{
     if(chat_input.value.length >= 1){
         socket.emit('messaje',{
             chat_input: chat_input.value,
@@ -39,7 +38,10 @@ send_button.addEventListener('click',()=>{
         chat_input.value = ''
         hed.innerHTML = l_online
     }
-   
+}
+
+send_button.addEventListener('click',()=>{
+   send()
 })
 
 socket.on('send_messaje',(ms)=>{
@@ -57,23 +59,33 @@ socket.on('send_messaje',(ms)=>{
 
 // User typing
 
-chat_input.addEventListener('keypress', ()=>{
-    if(chat_input.value.length > 3){
-        socket.emit('u_typing', l_online)
-    }
-})
+const type = () =>{
+    chat_input.addEventListener('keypress', ()=>{
+        if(chat_input.value.length > 1){
+            socket.emit('u_typing', l_online)
+        }
+        if (event.key === 'Enter') {
+           send()
+        }
+    })
 
-socket.on('typing',(use)=>{
-    hed.innerHTML = `${use} is typing . . .`
+    socket.on('typing',(use)=>{
+        hed.innerHTML = `${use} is typing . . .`
 
-    setTimeout(() => {
-        hed.innerHTML = l_online
-    }, 5000);
-})
+        setTimeout(() => {
+            hed.innerHTML = l_online
+        }, 5000);
+    })
+}
+
+type()
+
+// User entered
 
 socket.on('last',(ls)=>{
-    document.getElementById('user').innerHTML = `${ls.l_online} entered!`
+    document.getElementById('user').innerHTML = `<img class='usx' src="images/user_RobertHunt.jpg"> ${ls.l_online}`
+
     setTimeout(() => {
-        document.getElementById('user').innerHTML = l_online
+        document.getElementById('user').innerHTML = `${l_online}`
     }, 3000);
 })
